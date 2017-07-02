@@ -1,4 +1,4 @@
-# Compojure-api 2.0.0 demo app
+# Compojure-api 2.0.0 demo
 
 ## Usage
 

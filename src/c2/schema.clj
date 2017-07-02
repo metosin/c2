@@ -20,7 +20,7 @@
       (resource
         {:post
          {:summary "data-driven plus with schema"
-          :parameters {:body-params {:x s/Str, :y s/Str}}
+          :parameters {:body-params {:x s/Int, :y s/Int}}
           :responses {200 {:schema Total}}
-          :handler (fn [{{:keys [x y]} :query-params}]
+          :handler (fn [{{:keys [x y]} :body-params}]
                      (ok {:total (+ x y)}))}}))))

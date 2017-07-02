@@ -19,5 +19,5 @@
          {:summary "data-driven plus with clojure.spec using data-specs"
           :parameters {:body-params {:x int?, :y int?}}
           :responses {200 {:schema {:total int?}}}
-          :handler (fn [{{:keys [x y]} :query-params}]
+          :handler (fn [{{:keys [x y]} :body-params}]
                      (ok {:total (+ x y)}))}}))))
