@@ -4,9 +4,9 @@
             [clojure.spec.alpha :as s]
             [spec-tools.spec :as spec]))
 
-(s/def ::x spec/int?)
-(s/def ::y spec/int?)
-(s/def ::total spec/int?)
+(s/def ::x int?)
+(s/def ::y int?)
+(s/def ::total int?)
 (s/def ::total-map (s/keys :req-un [::total]))
 
 (def routes
